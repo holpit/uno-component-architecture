@@ -44,3 +44,9 @@ Vengono introdotti i concetti di FormGroup e le direttive che permettono di coll
   * Provare ad aggiungere dei validatori, anche simultanei a controlDriver
   * [ Validators.required, Validators.maxLength(3), Validators.email ]
 
+## Tag05
+
+* Aggiungiamo a GroupControlsComponent un validatore custom badLuckyValidator direttamente nel componente
+* Modifichiamone il comportamento grafico usando le classi che Angular gestisce in automatico sulla base dello stato del controllo bindato: input.ng-invalid, input:focus.ng-invalid {     border-left: 5px solid red; } (inserire in *style.css*)
+
+
