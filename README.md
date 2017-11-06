@@ -49,4 +49,15 @@ Vengono introdotti i concetti di FormGroup e le direttive che permettono di coll
 * Aggiungiamo a GroupControlsComponent un validatore custom badLuckyValidator direttamente nel componente
 * Modifichiamone il comportamento grafico usando le classi che Angular gestisce in automatico sulla base dello stato del controllo bindato: input.ng-invalid, input:focus.ng-invalid {     border-left: 5px solid red; } (inserire in *style.css*)
 
+## Tag06
+
+Il codice GroupControlsComponent non risponde al principio della Separation of concerns, che è uno dei più importanti principi di progettazione software e il concetto alla base è abbastanza semplice e spesso lo si applica senza nominarlo: suddividere l'applicazione in elementi distinti, ognuno rivolto ad uno specifico concern, quindi ad una specifica competenza.
+
+Nel nostro caso ci sono due violazioni: 
+* una evidente che è la presenza di un validatore all'interno di una componente
+* l'altra, più subdola, è lo sviluppo di un elenco di opzioni direttamente nel codice, come l'inizializzazione di valori statici. 
+
+Procediamo quindi a separare le responsabilità creando:
+* Un validatore a livello applicativo, condiviso e riusabile
+* Un servizio formula1.service.ts a livello applicativo che si occupi del recupero dei dati
 

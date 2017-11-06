@@ -1,11 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
-
-export function badLuckyValidator(): ValidatorFn {
-  return (control: AbstractControl): {[key: string]: any} => {
-    return [13, 17].includes(control.value) ? {'badlucky': true } : null;
-  };
-}
+import { badLuckyValidator } from '../directives/bad-lucky.directive';
 
 @Component({
   selector: 'uno-group-controls',
