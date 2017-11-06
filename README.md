@@ -27,6 +27,11 @@ L'applicazione è composta da una serie di componenti applicative che mostrano u
 La prima componente di esempio che viene creata è un semplice controllo FormControl che ne illustra le proprietà e i comportamenti principali, grazie al componente riusabile ControlMonitorComponent
 
 * Creazione di ControlMonitorComponent e di CheckedComponent
+* Creazione di 02-simple-control
+* Aggiornamento home con single control
+* Aggiornato MasterpageComponent con proprietà noBack (esempio di proprietà senza valore)
+* Notare lo status e i valori di SimpleControl
+  * Provare a inserire il validatore require per analizzarne il comportamento
 
 
 

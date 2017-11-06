@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 import { MasterpageComponent } from './components/masterpage.component';
 import { ControlMonitorComponent } from './components/control-monitor.component';
 import { CheckedComponent } from './components/checked.component';
  
 @NgModule({
   imports: [ 
-    CommonModule 
+    CommonModule,
+    ReactiveFormsModule,
+    RouterModule
   ],
   declarations: [ 
     MasterpageComponent,
@@ -14,7 +18,8 @@ import { CheckedComponent } from './components/checked.component';
     CheckedComponent
   ],
   exports: [
-    CommonModule, 
+    CommonModule,
+    ReactiveFormsModule,
     MasterpageComponent,
     ControlMonitorComponent
   ]

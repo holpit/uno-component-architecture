@@ -3,17 +3,16 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'uno-home',
     template: `
-    <uno-masterpage title="uno components course">
+    <uno-masterpage title="uno components course" noBack>
     <ul>
-        <li>...component link...</li>
+        <li *ngFor="let route of routes"><a routerLink="{{route.path}}">{{route.text}}</a></li>
     </ul>
     `
 })
 
 export class HomeComponent {
 routes = [
-    { path: '/simple-control', text: 'Simple control'},
-    { path: '/group-controls', text: 'Group controls'}
+    { path: '/simple-control', text: 'Simple control'}
 ];
 
 }
