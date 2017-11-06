@@ -7,13 +7,10 @@
         <input type="number" id="no" [formControl]="controlNumber">
         <label for="team">Team</label>
         <select id="team" [formControl]="controlTeam">
-          <option value="FER">Ferrari</option>
-          <option value="MCL">McLaren</option>
-          <option value="RED">Red Bull</option>
-          <option value="MER">Mercedes</option>
+          <option *ngFor="let team of teams" value="{{team.id}}">{{team.name}}</option>
         </select>
         <div class="command-buttons">
-          <button class="button button-outline" (click)="form.reset({driver:'Villeneuve',number:27,team:'FER'});value=null">Reset</button>
+          <button class="button button-outline" (click)="form.reset(defaultDriver);value=null">Reset</button>
           <button class="button" (click)="value = form.value">Submit</button>
         </div>
       </fieldset>

@@ -60,4 +60,9 @@ Nel nostro caso ci sono due violazioni:
 Procediamo quindi a separare le responsabilità creando:
 * Un validatore a livello applicativo, condiviso e riusabile
 * Un servizio formula1.service.ts a livello applicativo che si occupi del recupero dei dati
+  * Creato servizio che usa HttpClient con i metodi getTeams e getDefaultDrive
+  * Create interfacce model (Team, Driver)
+  * Creato db mockup assets/db/formula1.data.json
+
+
 

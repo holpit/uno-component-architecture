@@ -1,0 +1,13 @@
+{
+    "teams": [
+        { "id": "FER", "name": "Ferrari" },
+        { "id": "MCL", "name": "McLaren" },
+        { "id": "RED", "name": "Red Bull" },
+        { "id": "FER", "name": "Mercedes" }
+    ],
+    "defaultDriver" : {
+        "name": "Vettel",
+        "number": 5,
+        "teamId": "FER"
+    }
+}
