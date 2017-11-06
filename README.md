@@ -9,3 +9,8 @@ La base grafica del progetto è minimale e basata sul framework grafico Milligra
 ```
 npm install milligram normalize.css roboto-fontface font-awesome --save
 ```  
+* import dei css in style.scss
+* app.component.html con esempi
+
+
+
