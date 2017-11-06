@@ -34,5 +34,12 @@ La prima componente di esempio che viene creata è un semplice controllo FormCon
 * Notare lo status e i valori di SimpleControl
   * Provare a inserire il validatore require per analizzarne il comportamento
 
+## Tag04
 
+La seconda componente è un form con tre controlli. text, number e select
+Vengono introdotti i concetti di FormGroup e le direttive che permettono di collegare gli elementi del template a quelli della struttura di FormGroup e FormControl.
+
+* Creazione di GroupControlsComponent
+
+[ Validators.required, Validators.maxLength(3), Validators.email ]
 

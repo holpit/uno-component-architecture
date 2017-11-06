@@ -1,0 +1,24 @@
+<uno-masterpage title="group controls">
+    <form [formGroup]="form">
+      <fieldset>
+        <label for="driver">Driver</label>
+        <input type="text" id="driver" [formControl]="controlDriver">
+        <label for="no">Number</label>
+        <input type="number" id="no" [formControl]="controlNumber">
+        <label for="team">Team</label>
+        <select id="team" [formControl]="controlTeam">
+          <option value="FER">Ferrari</option>
+          <option value="MCL">McLaren</option>
+          <option value="RED">Red Bull</option>
+          <option value="MER">Mercedes</option>
+        </select>
+        <div class="command-buttons">
+          <button class="button button-outline" (click)="form.reset({driver:'Villeneuve',number:27,team:'FER'});value=null">Reset</button>
+          <button class="button" (click)="value = form.value">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  
+    <pre *ngIf="value"><code>// form value<br>{{value | json}}</code></pre>
+    <uno-control-monitor [control]='form'></uno-control-monitor>
+  </uno-masterpage> 

@@ -12,7 +12,8 @@ import { Component } from '@angular/core';
 
 export class HomeComponent {
 routes = [
-    { path: '/simple-control', text: 'Simple control'}
+    { path: '/simple-control', text: 'Simple control'},
+    { path: '/group-controls', text: 'Group controls'}
 ];
 
 }

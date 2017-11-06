@@ -4,6 +4,7 @@ import { ComponentsRoutingModule } from './components.routing.module';
 
 import { HomeComponent } from './01-home/home';
 import { SimpleControlComponent } from './02-simple-control/simple-control.component';
+import { GroupControlsComponent } from './03-group-controls/group-controls.component';
 
 @NgModule({
   imports: [ 
@@ -12,7 +13,8 @@ import { SimpleControlComponent } from './02-simple-control/simple-control.compo
   ],
   declarations: [ 
     HomeComponent,
-    SimpleControlComponent
+    SimpleControlComponent,
+    GroupControlsComponent
   ]
 })
 export class ComponentsModule { }
