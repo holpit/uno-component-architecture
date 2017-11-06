@@ -30,6 +30,7 @@ La prima componente di esempio che viene creata è un semplice controllo FormCon
 * Creazione di 02-simple-control
 * Aggiornamento home con single control
 * Aggiornato MasterpageComponent con proprietà noBack (esempio di proprietà senza valore)
+* Gestione layout globale per gestire buttons di comando allineati a destra (flexbox)
 * Notare lo status e i valori di SimpleControl
   * Provare a inserire il validatore require per analizzarne il comportamento
 
