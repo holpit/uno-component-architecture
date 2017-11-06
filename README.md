@@ -22,3 +22,11 @@ L'applicazione è composta da una serie di componenti applicative che mostrano u
 * Creazione della prima componente di navigazione 01-home
 * Aggiornamento app.component.html e scss e style.scss per body e h1
 
+## Tag03
+
+La prima componente di esempio che viene creata è un semplice controllo FormControl che ne illustra le proprietà e i comportamenti principali, grazie al componente riusabile ControlMonitorComponent
+
+* Creazione di ControlMonitorComponent e di CheckedComponent
+
+
+
