@@ -3,3 +3,14 @@
 @import "~normalize.css/normalize.css";
 @import "~roboto-fontface/css/roboto/roboto-fontface.css";
 @import "~font-awesome/css/font-awesome.css";
+
+body {
+    background-color: #F4F5F6;
+    min-height: 100vh;
+}
+
+h1 {
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+}
+
