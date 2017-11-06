@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { AbstractControl } from '@angular/forms';
+import { AbstractControl, FormGroup } from '@angular/forms';
 
 @Component({
     selector: 'uno-control-monitor',
@@ -43,5 +43,11 @@ controls: { name: string, control: AbstractControl }[];
     ngOnInit(): void {
         this.controls = [];
         this.controls.push({name: 'ROOT', control: this.control});
+        if(this.control instanceof FormGroup) {
+          let fg = <FormGroup> this.control;
+          for(let c in fg.controls) {
+              this.controls.push({name: c, control: fg.controls[c]});               
+          }
+      }
     }
 }

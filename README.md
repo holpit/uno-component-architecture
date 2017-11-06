@@ -40,6 +40,7 @@ La seconda componente è un form con tre controlli. text, number e select
 Vengono introdotti i concetti di FormGroup e le direttive che permettono di collegare gli elementi del template a quelli della struttura di FormGroup e FormControl.
 
 * Creazione di GroupControlsComponent
-
-[ Validators.required, Validators.maxLength(3), Validators.email ]
+* Aggiornato ControlMonitorComponent per analizzare tutti gli elementi figli
+  * Provare ad aggiungere dei validatori, anche simultanei a controlDriver
+  * [ Validators.required, Validators.maxLength(3), Validators.email ]
 
