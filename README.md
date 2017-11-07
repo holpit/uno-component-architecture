@@ -97,6 +97,17 @@ Creiamo un nuovo componente TemplateControlsComponent che ha le stesse funzional
 * Provare l'attributo disabled e relativo stato DISABLED
 * Provare l'attributo required e relativo Validators.required inserito automaticamente dalla direttiva required
 
+Diversamente da come fanno intendere alcuni tutorial disponibili in rete (anche dalla documentazione ufficiale) i template-driven forms non sono una versione semplificata dei ReactiveForms quanto piuttosto delle direttive sviluppate on-the-top ai Reactive Form per rendere più rapido il lavoro di programmazione quando non si ha bisogno di un elevato livello di configurazione e controllo dei controlli stessi.
+
+Come vedremo Reactive Form è progettato per permettere un elevato livello di testing, mentre Template-Driven no, mascherando come fa i comportamenti interni.
+
+Quello che è importante sottolineare è che l'approccio di Template-Driven Forms può essere una buona traccia per costruire componenti applicative riusabili
+
+#Tag11
+
+Addesso dovrebbero essere chiari gli strumenti che Angular ci mette a disposizione per sviluppare interfacce basate su form.
+
+
 
 
 
