@@ -64,5 +64,15 @@ Procediamo quindi a separare le responsabilità creando:
   * Create interfacce model (Team, Driver)
   * Creato db mockup assets/db/formula1.data.json
 
+  ## Tag07
+
+  Per completare la carrellata sui validatori e sullo stato dei controlli, creiamo un semplice validatore asincrono che verifichi la disponibilità di un numero attribuito ad un pilota.
+
+  * Inserire in controlNumber il validatore numberUsedValidator()
+  * Mostrare come funzionano i lettable operator tra vecchio e nuova modalità dichiarativa
+  * Mostrare come l'approccio tradizionale monta tutti gli operatory su prototype
+
+  
+
 
 

@@ -4,6 +4,7 @@ import { badLuckyValidator } from '../directives/bad-lucky.directive';
 import { Formula1Service } from '../services/formula1.service';
 import { Team } from '../models/team';
 import { Driver } from '../models/driver';
+import { numberUsedValidator } from '../directives/number-used.directive';
 
 @Component({
   selector: 'uno-group-controls',
@@ -20,7 +21,7 @@ export class GroupControlsComponent implements OnInit {
 
   constructor(private f1: Formula1Service) { 
     this.controlDriver = new FormControl('');
-    this.controlNumber = new FormControl(null, badLuckyValidator());
+    this.controlNumber = new FormControl(null, badLuckyValidator(), );
     this.controlTeam = new FormControl('');
     let driver = {
       name: this.controlDriver,
