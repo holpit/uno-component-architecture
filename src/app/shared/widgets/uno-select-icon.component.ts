@@ -7,7 +7,7 @@ import { IconOption } from '../models/icon-option';
   selector: 'uno-select-icon',
   template: `
     <label>{{label}}</label>
-    <uno-icons-selector [options]="options"></uno-icons-selector>
+    <uno-icons-selector [options]="options" [formControl]="control"></uno-icons-selector>
   `
 })
 export class UnoSelectIconComponent implements OnInit {
