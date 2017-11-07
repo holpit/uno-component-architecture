@@ -8,6 +8,13 @@
     "defaultDriver" : {
         "name": "Vettel",
         "number": 5,
-        "teamId": "FER"
-    }
+        "teamId": "FER",
+        "social": ["FB", "TW"]
+    },
+    "social" : [
+        { "id": "FB", "iconName": "fa-facebook-square", "description": "Facebook" },
+        { "id": "TW", "iconName": "fa-twitter-square ", "description": "Twitter" },
+        { "id": "IN", "iconName": "fa-instagram", "description": "Instagram" },
+        { "id": "GP", "iconName": "fa-google-plus-official", "description": "Google Plus" }
+    ]
 }

@@ -9,6 +9,8 @@
         <select id="team" [formControl]="controlTeam">
           <option *ngFor="let team of teams" value="{{team.id}}">{{team.name}}</option>
         </select>
+        <label>Social contact</label>
+        <uno-icons-selector [options]="socialOptions" [formControl]="controlSocial"></uno-icons-selector>
         <div class="command-buttons">
           <button class="button button-outline" (click)="form.reset(defaultDriver);value=null">Reset</button>
           <button class="button" (click)="value = form.value">Submit</button>

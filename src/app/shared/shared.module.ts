@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { MasterpageComponent } from './components/masterpage.component';
 import { ControlMonitorComponent } from './components/control-monitor.component';
 import { CheckedComponent } from './components/checked.component';
+import { IconsSelectorComponent } from './components/icons-selector.component';
  
 @NgModule({
   imports: [ 
@@ -15,13 +16,15 @@ import { CheckedComponent } from './components/checked.component';
   declarations: [ 
     MasterpageComponent,
     ControlMonitorComponent,
-    CheckedComponent
+    CheckedComponent,
+    IconsSelectorComponent
   ],
   exports: [
     CommonModule,
     ReactiveFormsModule,
     MasterpageComponent,
-    ControlMonitorComponent
+    ControlMonitorComponent,
+    IconsSelectorComponent
   ]
 })
 export class SharedModule { }
