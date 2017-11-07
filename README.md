@@ -103,7 +103,7 @@ Come vedremo Reactive Form è progettato per permettere un elevato livello di te
 
 Quello che è importante sottolineare è che l'approccio di Template-Driven Forms può essere una buona traccia per costruire componenti applicative riusabili
 
-#Tag11
+## Tag11
 
 Addesso dovrebbero essere chiari gli strumenti che Angular ci mette a disposizione per sviluppare interfacce basate su form.
 
