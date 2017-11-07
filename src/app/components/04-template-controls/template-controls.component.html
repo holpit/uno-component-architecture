@@ -1,0 +1,23 @@
+<uno-masterpage title="group controls">
+    <form #tmForm="ngForm" (ngSubmit)="onSubmit()">
+      <fieldset>
+        <label for="driver">Driver</label>
+        <input type="text" id="driver" name="tm-name" [(ngModel)]="driver.name">
+        <label for="no">Number</label>
+        <input type="number" id="no" name="tm-number" [(ngModel)]="driver.number">
+        <label for="team">Team</label>
+        <select id="team" name="tm-teamId" [(ngModel)]="driver.teamId">
+          <option *ngFor="let team of teams" value="{{team.id}}">{{team.name}}</option>
+        </select>
+        <label>Social contact</label>
+        <uno-icons-selector [options]="socialOptions" name="tm-social" [(ngModel)]="driver.social"></uno-icons-selector>
+        <div class="command-buttons">
+          <button type="button" class="button button-outline" (click)="tmForm.reset(defaultDriver);value=null">Reset</button>
+          <button type="submit" class="button" [disabled]="!tmForm.valid">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  
+    <pre *ngIf="value"><code>// form value<br>{{value | json}}</code></pre>
+    <uno-control-monitor [control]='tmForm'></uno-control-monitor>
+  </uno-masterpage> 

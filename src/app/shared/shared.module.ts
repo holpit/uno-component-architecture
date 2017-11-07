@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { MasterpageComponent } from './components/masterpage.component';
 import { ControlMonitorComponent } from './components/control-monitor.component';
@@ -10,6 +10,7 @@ import { IconsSelectorComponent } from './components/icons-selector.component';
 @NgModule({
   imports: [ 
     CommonModule,
+    FormsModule,
     ReactiveFormsModule,
     RouterModule
   ],
@@ -21,6 +22,7 @@ import { IconsSelectorComponent } from './components/icons-selector.component';
   ],
   exports: [
     CommonModule,
+    FormsModule,
     ReactiveFormsModule,
     MasterpageComponent,
     ControlMonitorComponent,

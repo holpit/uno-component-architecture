@@ -85,6 +85,17 @@ Supponiamo di voler costuire un controllo che permetta di indicare su quali soci
 GroupControlsComponent viene semplificato ricorrendo all'helper FormBuilder, di cui ora è più chiara la finalità e come opera, facendosi carico di tutto il lavoro di inizializzazione che prima avevamo fatto in maniera dettagliata.
 Sparendo un riferimento diretto ai controlli (si potrebbe sempre ricorrere a form.name, form.number...), è possibile ricorrere alla direttiva formControlName
 
+## Tag10
+
+Creiamo un nuovo componente TemplateControlsComponent che ha le stesse funzionalità di GroupControlsComponent ma che utilizza l'approccio template-driven form e le direttive.
+
+* Dal codice viene eliminata la costruzione della struttura FormGroup e FormControls
+* Viene inizializzato e popolato solo il model driver
+* Nell'HTML viene inizializzato il Form con la direttiva NgForm
+* Inizializzare una direttiva (#tmForm="NgForm")significa che la variabile #tmForm non farà più riferimento a un HTMLElementRef ma a un oggetto di tipo NgForm
+* Ai controlli viene associata la direttiva NgModel e l'attributo name
+* Provare l'attributo disabled e relativo stato DISABLED
+* Provare l'attributo required e relativo Validators.required inserito automaticamente dalla direttiva required
 
 
 

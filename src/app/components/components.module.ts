@@ -6,6 +6,7 @@ import { ComponentsRoutingModule } from './components.routing.module';
 import { HomeComponent } from './01-home/home';
 import { SimpleControlComponent } from './02-simple-control/simple-control.component';
 import { GroupControlsComponent } from './03-group-controls/group-controls.component';
+import { TemplateControlsComponent } from './04-template-controls/template-controls.component';
 
 import { Formula1Service } from './services/formula1.service';
 
@@ -18,7 +19,8 @@ import { Formula1Service } from './services/formula1.service';
   declarations: [ 
     HomeComponent,
     SimpleControlComponent,
-    GroupControlsComponent
+    GroupControlsComponent,
+    TemplateControlsComponent
   ],
   providers: [
     Formula1Service

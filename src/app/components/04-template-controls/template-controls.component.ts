@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 import { Team } from '../models/team';
 import { Driver } from '../models/driver';
@@ -7,29 +7,27 @@ import { IconOption } from '../../shared/models/icon-option';
 import { Formula1Service } from '../services/formula1.service';
 
 @Component({
-  selector: 'uno-group-controls',
-  templateUrl: './group-controls.component.html'
+  selector: 'uno-template-controls',
+  templateUrl: './template-controls.component.html'
 })
-export class GroupControlsComponent {
-  form: FormGroup;
+export class TemplateControlsComponent {
+  @ViewChild('tmForm') tmForm;
   teams: Team[];
-  defaultDriver: Driver;
   socialOptions: IconOption[];
+  defaultDriver: Driver;
+  driver: Driver;
   value;
 
-  constructor(private fb: FormBuilder, private f1: Formula1Service) { 
-
-    this.form = fb.group({
-        name: '',
-        number: null,
-        teamId: '',
-        social: []
-    })
+  constructor(private f1: Formula1Service) { 
+    this.driver = <Driver>{};
     f1.getTeams().subscribe(t => this.teams = t);
     f1.getSocial().subscribe(t => this.socialOptions = t);
     f1.getDefaultDriver().subscribe(t => {
-      this.form.patchValue(t);
-      this.defaultDriver = t;
+      this.defaultDriver = this.driver = t;
     });
+  }
+
+  onSubmit(){
+    this.value = { modelValue: this.driver, formValue: this.tmForm.value };
   }
 }

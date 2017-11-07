@@ -1,9 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { AbstractControl, FormGroup } from '@angular/forms';
+import { AbstractControl, FormGroup, NgForm } from '@angular/forms';
 
 @Component({
-    selector: 'uno-control-monitor',
-    template: `
+  selector: 'uno-control-monitor',
+  template: `
         <table *ngIf="control">
         <thead>
           <tr>
@@ -35,19 +35,22 @@ import { AbstractControl, FormGroup } from '@angular/forms';
 })
 
 export class ControlMonitorComponent implements OnInit {
-@Input() control: AbstractControl;
-controls: { name: string, control: AbstractControl }[];
+  @Input() control: AbstractControl;
+  controls: { name: string, control: AbstractControl }[];
 
-    constructor() { }
+  constructor() { }
 
-    ngOnInit(): void {
-        this.controls = [];
-        this.controls.push({name: 'ROOT', control: this.control});
-        if(this.control instanceof FormGroup) {
-          let fg = <FormGroup> this.control;
-          for(let c in fg.controls) {
-              this.controls.push({name: c, control: fg.controls[c]});               
-          }
+  ngOnInit(): void {
+    setTimeout(() => {
+      console.log(this.control);
+      this.controls = [];
+      this.controls.push({ name: 'ROOT', control: this.control });
+      if (this.control instanceof FormGroup || this.control instanceof NgForm) {
+        let fg = <FormGroup>this.control;
+        for (let c in fg.controls) {
+          this.controls.push({ name: c, control: fg.controls[c] });
+        }
       }
-    }
+    }, 0);
+  }
 }
