@@ -36,6 +36,7 @@ import { AbstractControl, FormGroup, NgForm } from '@angular/forms';
 
 export class ControlMonitorComponent implements OnInit {
   @Input() control: AbstractControl;
+  @Input() disabled: boolean;
   controls: { name: string, control: AbstractControl }[];
 
   constructor() { }

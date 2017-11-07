@@ -107,6 +107,12 @@ Quello che è importante sottolineare è che l'approccio di Template-Driven Form
 
 Addesso dovrebbero essere chiari gli strumenti che Angular ci mette a disposizione per sviluppare interfacce basate su form.
 
+* inserita la possibilità di disabilitare il monitor sui controlli (attivo solo se debug="true")
+* Creazione dei widget uno-form, uno-text, uno-select, uno-select-icon
+* Creazione della versione del form tramite composizione di widgets
+
+Questo approccio è per molti aspetti simile ad un Template-Driven verticalizzato e fatto su misura per le proprie applicazioni. La fase di TEST con questo approccio diventa fondamentale e viene spostata sui widget e sui componenti di base, mentre gli oggetti più vicini al dominio possono essere sottoposti a test funzionali più tradizionali.
+
 
 
 

@@ -6,6 +6,10 @@ import { MasterpageComponent } from './components/masterpage.component';
 import { ControlMonitorComponent } from './components/control-monitor.component';
 import { CheckedComponent } from './components/checked.component';
 import { IconsSelectorComponent } from './components/icons-selector.component';
+import { UnoFormComponent } from './widgets/uno-form.components';
+import { UnoTextComponent } from './widgets/uno-text.component';
+import { UnoSelectComponent } from './widgets/uno-select.component';
+import { UnoSelectIconComponent } from './widgets/uno-select-icon.component';
  
 @NgModule({
   imports: [ 
@@ -18,7 +22,11 @@ import { IconsSelectorComponent } from './components/icons-selector.component';
     MasterpageComponent,
     ControlMonitorComponent,
     CheckedComponent,
-    IconsSelectorComponent
+    IconsSelectorComponent,
+    UnoFormComponent,
+    UnoTextComponent,
+    UnoSelectComponent,
+    UnoSelectIconComponent
   ],
   exports: [
     CommonModule,
@@ -26,7 +34,11 @@ import { IconsSelectorComponent } from './components/icons-selector.component';
     ReactiveFormsModule,
     MasterpageComponent,
     ControlMonitorComponent,
-    IconsSelectorComponent
+    IconsSelectorComponent,
+    UnoFormComponent,
+    UnoTextComponent,
+    UnoSelectComponent,
+    UnoSelectIconComponent
   ]
 })
 export class SharedModule { }

@@ -1,0 +1,8 @@
+<uno-masterpage title="widget controls">
+    <uno-form title="driver profile" [model]="driver">
+        <uno-text name="name" label="Driver" ></uno-text>
+        <uno-text name="number" label="Number" type="number"></uno-text>
+        <uno-select name="teamId" label="Team" [options]="teams"></uno-select>
+        <uno-select-icon name="social" label="Social contacts" [options]="socialOptions"></uno-select-icon>
+    </uno-form>
+</uno-masterpage> 

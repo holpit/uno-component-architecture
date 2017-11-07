@@ -14,7 +14,8 @@ export class HomeComponent {
 routes = [
     { path: '/simple-control', text: 'Simple control'},
     { path: '/group-controls', text: 'Group controls'},
-    { path: '/template-controls', text: 'Template-driven controls'}
+    { path: '/template-controls', text: 'Template-driven controls'},
+    { path: '/widget-controls', text: 'Widget controls'}
 ];
 
 }
