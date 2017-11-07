@@ -2,15 +2,15 @@
     <form [formGroup]="form">
       <fieldset>
         <label for="driver">Driver</label>
-        <input type="text" id="driver" [formControl]="controlDriver">
+        <input type="text" id="driver" formControlName="name">
         <label for="no">Number</label>
-        <input type="number" id="no" [formControl]="controlNumber">
+        <input type="number" id="no" formControlName="number">
         <label for="team">Team</label>
-        <select id="team" [formControl]="controlTeam">
+        <select id="team" formControlName="teamId">
           <option *ngFor="let team of teams" value="{{team.id}}">{{team.name}}</option>
         </select>
         <label>Social contact</label>
-        <uno-icons-selector [options]="socialOptions" [formControl]="controlSocial"></uno-icons-selector>
+        <uno-icons-selector [options]="socialOptions" formControlName="social"></uno-icons-selector>
         <div class="command-buttons">
           <button class="button button-outline" (click)="form.reset(defaultDriver);value=null">Reset</button>
           <button class="button" (click)="value = form.value">Submit</button>

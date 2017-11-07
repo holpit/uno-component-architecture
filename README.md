@@ -80,4 +80,12 @@ Supponiamo di voler costuire un controllo che permetta di indicare su quali soci
 * Creato controllo IconsSelectorComponent
 * Testare la disabilitazione {value: [], disabled: true}
 
+## Tag09
+
+GroupControlsComponent viene semplificato ricorrendo all'helper FormBuilder, di cui ora è più chiara la finalità e come opera, facendosi carico di tutto il lavoro di inizializzazione che prima avevamo fatto in maniera dettagliata.
+Sparendo un riferimento diretto ai controlli (si potrebbe sempre ricorrere a form.name, form.number...), è possibile ricorrere alla direttiva formControlName
+
+
+
+
 
